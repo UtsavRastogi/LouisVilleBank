@@ -20,6 +20,8 @@
 </video>
 </div>
 
+
+
 <!-- Header and LOGO -->
 <%@include file="header.jsp" %>
 <div id="sitelogo">
