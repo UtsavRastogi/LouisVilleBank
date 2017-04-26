@@ -1,0 +1,78 @@
+@CHARSET "ISO-8859-1";
+body{
+	
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+video{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	transform: translatex(-50%) translatey(-50%);
+}
+
+
+	#openacc{
+	
+	width: 850px;
+	height: auto;
+	min-height: 400px;
+	text-align: center;
+	background-color:rgba(61, 9, 9,0.7);
+	margin: 0 auto;
+	
+	margin-top: 21px;
+	border-radius: 10px;
+	clear: both;
+	color: white;
+	font-family: Tangerine;
+	font-size: 30px;
+	font-weight: bolder;
+	border: 5px ridge white;
+}	
+	
+input {
+	height: 45px;
+	width: 300px;
+	font-size: 18px;
+	margin: 20px;
+	background-color: rgba(255,255,255,0.1);
+	border: none;
+	border-bottom: 4px groove white;
+	border-radius: 10px;
+	color: white;
+	padding-left: 30px;
+}
+
+#btn{
+height: 45px;
+	width: 200px;
+border: none;
+background-color: rgba(255,255,255,0.1);
+margin-left: 100px;
+margin-bottom: 50px;
+border-bottom: 4px groove white;
+border-radius: 10px;
+	color: white;
+	padding-left: 13px;
+	font-family: Tangerine;
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+#btn:HOVER {
+	background-color: white;
+color: red;
+cursor: pointer;
+	
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: pink;
+}	

@@ -1,0 +1,19 @@
+@CHARSET "ISO-8859-1";
+body{
+	
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+video{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	transform: translatex(-50%) translatey(-50%);
+}
+

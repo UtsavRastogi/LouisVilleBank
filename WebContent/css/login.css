@@ -1,0 +1,89 @@
+@CHARSET "ISO-8859-1";
+
+body{
+	
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+video{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	transform: translatex(-50%) translatey(-50%);
+}
+
+header{
+	background-color: transparent;
+	height: 170px;
+	width: 300px;
+	float : left;
+	}
+	
+	header img{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	float: left;
+	display: block;
+	}
+	
+	.container{
+	width: 500px;
+	height: 400px;
+	text-align: center;
+	background-color:rgba(128,0,0,0.6);
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 210px;
+	border-radius: 5px;
+	clear: both;
+	color: white;
+	}
+	
+	.container img{
+	width: 100px;
+	height: 100px;
+	margin-top: -60px;
+	margin-bottom: 30px;
+	border-radius: 30px;
+	}
+	
+	input {
+	height: 45px;
+	width: 300px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	background-color: rgba(255,255,255,0.1);
+	border: none;
+	border-bottom: 4px groove white;
+	border-radius: 10px;
+	color: white;
+	padding-left: 30px;
+}
+
+#submitbtn{
+	border: 5px  white;
+	width: 140px;
+	padding-left: 5px;
+	border-bottom: 4px groove white;
+	border-top: 4px solid white;
+	
+}
+
+#submitbtn:hover{
+	
+background-color: white;
+color: red;
+cursor: pointer;
+	
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: pink;
+}

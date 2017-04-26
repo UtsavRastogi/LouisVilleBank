@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>LouisBank</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <security-constraint>
+  <web-resource-collection>
+  <web-resource-name>LouisVilleBank</web-resource-name>
+  <url-pattern>/*</url-pattern>
+  </web-resource-collection>
+  
+  <user-data-constraint>
+  <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+  
+  </user-data-constraint>
+  </security-constraint>
+  
+  <session-config>
+  <session-timeout>10</session-timeout>
+  <tracking-mode>SSL</tracking-mode>
+  </session-config>
+  
+  
+<servlet>
+  <servlet-name>SendToWelcomePage</servlet-name>
+  <servlet-class>com.tcs.bank.login.SendToWelcomePage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SendToWelcomePage</servlet-name>
+  <url-pattern>/WelcomeServlet</url-pattern>
+  </servlet-mapping>
+  
+ 
+  
+  <servlet>
+  <servlet-name>LoginServlet</servlet-name>
+  <servlet-class>com.tcs.bank.login.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>LoginServlet</servlet-name>
+  <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  <servlet-name>LogoutServlet</servlet-name>
+  <servlet-class>com.tcs.bank.login.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>LogoutServlet</servlet-name>
+  <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  <servlet-name>CreateAccount</servlet-name>
+  <servlet-class>com.tcs.bank.accountcreation.OpenAccount</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>CreateAccount</servlet-name>
+  <url-pattern>/appServlet3</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>OwnTransfers</servlet-name>
+  <servlet-class>com.tcs.bank.transactions.Transactions</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>OwnTransfers</servlet-name>
+  <url-pattern>/appServlet4</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>OtherTransfers</servlet-name>
+  <servlet-class>com.tcs.bank.transactions.OtherTransactions</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>OtherTransfers</servlet-name>
+  <url-pattern>/appServlet5</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>Exchange</servlet-name>
+  <servlet-class>com.tcs.bank.exchange.Exchange</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Exchange</servlet-name>
+  <url-pattern>/appServlet6</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>CreateAccountbyCustomer</servlet-name>
+  <servlet-class>com.tcs.bank.accountcreation.CreateAccountbyCustomer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>CreateAccountbyCustomer</servlet-name>
+  <url-pattern>/appServlet13</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>OwnTransfersCus</servlet-name>
+  <servlet-class>com.tcs.bank.transactions.OwnTransactionsCus</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>OwnTransfersCus</servlet-name>
+  <url-pattern>/appServlet14</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
+  <servlet-name>ExchangeCus</servlet-name>
+  <servlet-class>com.tcs.bank.exchange.ExchangeCus</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ExchangeCus</servlet-name>
+  <url-pattern>/appServlet16</url-pattern>
+  </servlet-mapping>
+  
+<filter>
+<filter-name>filter0</filter-name>
+<filter-class>com.tcs.bank.login.SessionTracker</filter-class>
+</filter>
+<filter-mapping>
+<filter-name>filter0</filter-name>
+<url-pattern>/createaccount.jsp</url-pattern>
+<url-pattern>/OwnTransfers.jsp</url-pattern>
+<url-pattern>/OtherTransfer.jsp</url-pattern>
+<url-pattern>/ExchangeRate.jsp</url-pattern>
+<url-pattern>/ViewLogs.jsp</url-pattern>
+<url-pattern>/WelcomeMan.jsp</url-pattern>
+<url-pattern>/WelcomeCus.jsp</url-pattern>
+<url-pattern>/createaccountbycus.jsp</url-pattern>
+<url-pattern>/OwnTransferCus.jsp</url-pattern>
+<url-pattern>/exchangeRateCus.jsp</url-pattern>
+<url-pattern>/ViewLogsCus.jsp</url-pattern>
+</filter-mapping>
+
+
+ 
+  </web-app>

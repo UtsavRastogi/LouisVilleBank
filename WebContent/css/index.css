@@ -1,0 +1,67 @@
+@CHARSET "ISO-8859-1";
+body{
+	 font-family: 'Tangerine', serif;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+video{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	transform: translatex(-50%) translatey(-50%);
+}
+
+
+	#animatedText{
+	
+	clear: both;
+	margin-left: 155px;
+	margin-top: 120px;
+	font-weight: bolder;
+	}
+	
+	#demo{
+	font-size: 60px;
+	font-family: Tangerine, serif;
+	font-weight: normal;
+	font-style: italic;
+	color: white;
+	}
+	
+	#sitelogo{
+	height: 350px;
+	width: 350px;
+	}
+	
+	#logo1{
+	display: block;
+	max-height: 100%;
+	max-width: 100%;
+	margin-left: 500px;
+	}
+
+	
+	#loginform{
+	display: inline;
+	font-size: 30px;
+	}
+	
+	#icons{
+font-size: 15px;
+color: white;
+margin-right: 20px;
+float: right;
+}
+
+#icons:hover{
+
+color: red;
+cursor: pointer;
+
+}
